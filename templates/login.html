@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        {% include 'include/form.html' %}
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+</div>
+{%endblock%}
